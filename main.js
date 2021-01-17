@@ -20,7 +20,7 @@ app.use(
 app.listen(port, () => console.log(`server running at port ${port}`));
 
 // Routes
-app.use('/apps', require('./api/v1/apps/routes/app.routes'));
+app.use('/find', require('./api/v1/apps/routes/app.routes'));
 app.use('/users', require('./api/v1/users/routes/users.route'));
 
 app.get('/', (req, res) => {

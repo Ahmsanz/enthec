@@ -4,6 +4,9 @@ const app = express();
 const controller = require('../controllers/app.controller');
 
 
-app.get('/', controller.get);
+app
+    .get('/', controller.get)
+
+    .get('/:category', controller.getByCategory);
 
 module.exports = app;
