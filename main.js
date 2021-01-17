@@ -21,6 +21,7 @@ app.listen(port, () => console.log(`server running at port ${port}`));
 
 // Routes
 app.use('/apps', require('./api/v1/apps/routes/app.routes'));
+app.use('/users', require('./api/v1/users/routes/users.route'));
 
 app.get('/', (req, res) => {
     console.log('Welcome, you are accessing the API')
